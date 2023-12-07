@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmPatientActivity">
+
+    <EditText
+        android:id="@+id/editTextPolisEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="01.01.2050"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Дата конца полиса"
+        app:layout_constraintStart_toStartOf="@+id/editTextPoilsCompany"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPoilsCompany" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Регистрация как пациент"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextLastName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+    <EditText
+        android:id="@+id/editTextMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Отчество"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+    <EditText
+        android:id="@+id/editTextBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="01.01.1999"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/editTextMiddleName"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Дата рождения"
+        app:layout_constraintStart_toStartOf="@+id/editTextBirthDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMiddleName" />
+
+    <EditText
+        android:id="@+id/editTextPolisId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Полис"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextBirthDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBirthDate" />
+
+    <EditText
+        android:id="@+id/editTextPoilsCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Компания полиса"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextPolisId"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPolisId" />
+
+    <EditText
+        android:id="@+id/editTextSnilsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Снилс"
+        android:inputType="text"
+        android:text="123-123-123 12"
+        app:layout_constraintStart_toStartOf="@+id/editTextPolisEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPolisEndDate" />
+
+    <EditText
+        android:id="@+id/editTextHomeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Домашний адрес"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextSnilsNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSnilsNumber" />
+
+    <EditText
+        android:id="@+id/editTextWorkPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Место работы"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextHomeAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextHomeAddress" />
+
+    <EditText
+        android:id="@+id/editTextWorkPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Должность"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextWorkPlace"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkPlace" />
+
+    <Button
+        android:id="@+id/registerAsPatientButton"
+        android:layout_width="278dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:text="Зарегистрироваться"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWorkPosition" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

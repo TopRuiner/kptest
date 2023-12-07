@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/doctorListItem_FIO"
+        android:text="Doctor FIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/doctorListItem_speciality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Doctor speciality"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/doctorListItem_FIO"
+        app:layout_constraintTop_toBottomOf="@id/doctorListItem_FIO" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/doctorListItem_FIO"
+        app:layout_constraintStart_toEndOf="@+id/doctorListItem_speciality"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:id="@+id/doctorListItem_category"
+        android:text="Doctor category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/doctorListItem_FIO"
+        app:layout_constraintStart_toEndOf="@+id/doctorListItem_category"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:id="@+id/doctorListItem_degree"
+        android:text="Doctor degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/doctorId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

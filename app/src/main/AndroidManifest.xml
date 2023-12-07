@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kptest"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ExaminationReferralItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExaminationReferralListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalysisReferralItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalysisReferralListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorReferralItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorReferralListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalysisItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnalysisListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExaminationItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExaminationListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InspectionItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmPatientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServerDownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthenticationFailed"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_menu" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthenticateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InspectionListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

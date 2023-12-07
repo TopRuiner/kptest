@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/patientCardButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="148dp"
+        android:text="Данные карточки"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Выйти"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/patientInspectionButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Осмотры"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientCardButton" />
+
+    <Button
+        android:id="@+id/patientExaminationButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:text="Обследования"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientInspectionButton" />
+
+    <Button
+        android:id="@+id/patientAnalysisButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:text="Анализы"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientExaminationButton" />
+
+    <Button
+        android:id="@+id/patientDoctorReferralsButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="Направления к врачам"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientAnalysisButton" />
+
+    <Button
+        android:id="@+id/patientExaminationReferralsButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:text="Направления на обследование"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientDoctorReferralsButton" />
+
+    <Button
+        android:id="@+id/patientAnalysisReferralsButton"
+        android:layout_width="331dp"
+        android:layout_height="48dp"
+        android:text="Направления на анализ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patientExaminationReferralsButton" />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="userEmail"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoutButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logoutButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
