@@ -29,8 +29,6 @@ public class PolyclinicFragment extends Fragment {
         binding = FragmentPolyclinicBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNotifications;
-        polyclinicViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         final Button doctorListButton = binding.doctorListButton;
         doctorListButton.setOnClickListener(v -> {
