@@ -97,6 +97,8 @@ public class CreateAppointmentActivity extends AppCompatActivity {
 
                 System.out.println("--------------------------");
                 System.out.println(appointmentRequest.toString());
+                List<String> appointmentTimeList = new ArrayList<>();
+                appointmentTimeList.add("Выберите время");
                 doctorApi.makeAppointment(jwt, appointmentRequest).enqueue(new Callback<Boolean>() {
                     @Override
                     public void onResponse(Call<Boolean> call, Response<Boolean> response) {
@@ -141,6 +143,8 @@ public class CreateAppointmentActivity extends AppCompatActivity {
 //                                        Toast.makeText(CreateAppointmentActivity.this,"Placeholder Selected", Toast.LENGTH_SHORT).show();
                                         calendarView.setVisibility(View.INVISIBLE);
                                         clickedDoctorId = 0L;
+                                        List<String> appointmentTimeList = new ArrayList<>();
+                                        appointmentTimeList.add("Выберите время");
                                     } else {
                                         clickedDoctorId = clickedDoctor.getId();
                                         calendarView.setVisibility(View.VISIBLE);
@@ -164,6 +168,8 @@ public class CreateAppointmentActivity extends AppCompatActivity {
 //                                                                    Toast.makeText(view.getContext(), "Sent", Toast.LENGTH_LONG).show();
                                                                     System.out.println("----------------");
                                                                     System.out.println(response.body());
+                                                                    List<String> appointmentTimeList = new ArrayList<>();
+                                                                    appointmentTimeList.add("Выберите время");
                                                                     appointmentTimeList.addAll(response.body());
 
 
